@@ -131,6 +131,7 @@ public class ErrorMessageAdapter {
                     // Error --> No permissions
                     message = String.format(res.getString(R.string.forbidden_permissions),
                             res.getString(R.string.forbidden_permissions_delete));
+
                 } else if (result.getCode() == ResultCode.MAINTENANCE_MODE) {
                     message = res.getString(R.string.maintenance_mode);
 
@@ -306,7 +307,7 @@ public class ErrorMessageAdapter {
             } else if (result.getCode() == ResultCode.FORBIDDEN) {
                 message = String.format(res.getString(R.string.forbidden_permissions),
                         res.getString(R.string.forbidden_permissions_copy));
-                
+
             } else if (result.getCode() == ResultCode.MAINTENANCE_MODE) {
                 message = res.getString(R.string.maintenance_mode);
 
